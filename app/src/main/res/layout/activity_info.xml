@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bordeTexto">
+    <LinearLayout
+        android:id="@+id/llOpciones"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/interior"
+        android:layout_margin="@dimen/marcodef"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/imc"
+            android:textSize="@dimen/tituloSp"
+            android:textColor="@color/bordeTexto"
+            android:padding="@dimen/marcodef"/>
+        <RadioGroup
+            android:id="@+id/rgOpcionInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/rbWeb"
+                android:layout_width="@dimen/dimens"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/wiki"/>
+            <RadioButton
+                android:id="@+id/rbCall"
+                android:layout_width="@dimen/dimens"
+                android:layout_height="wrap_content"
+                android:text="OMS Madrid - 915555555"/>
+
+        </RadioGroup>
+        <Button
+            android:id="@+id/btnOK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ok"
+            android:onClick="onClickBtn"
+            android:layout_marginTop="@dimen/marcodef"/>
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/volver_atr_s"
+            android:onClick="onClickBtn"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

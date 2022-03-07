@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bordeTexto">
+    <LinearLayout
+        android:id="@+id/llOpciones"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/interior"
+        android:layout_margin="@dimen/marcodef"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/imc"
+            android:textColor="@color/bordeTexto"
+            android:textSize="@dimen/tituloSp"
+            android:padding="@dimen/marcodef"/>
+        <RadioGroup
+            android:id="@+id/rgOpcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/rbCalcular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/calcular_imc"/>
+            <RadioButton
+                android:id="@+id/rbInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mas_info"/>
+
+        </RadioGroup>
+        <Button
+            android:id="@+id/btnAct1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calcular_imc"
+            android:onClick="onClickBtn"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llLogo"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/interior"
+        android:layout_margin="@dimen/marcodef"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageButton
+            android:id="@+id/btnLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

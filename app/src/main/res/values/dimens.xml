@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marcodef">22dp</dimen>
+    <dimen name="tituloSp">25sp</dimen>
+    <dimen name="dimens">200dp</dimen>
+</resources>
